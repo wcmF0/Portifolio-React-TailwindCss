@@ -105,3 +105,9 @@
     overflow-x: hidden; /* Oculta o scroll horizontal apenas em telas pequenas */
   }
 }
+
+@media (max-width: 768px) {
+  .mouse-glow {
+    display: none; /* Esconde o mouse glow */
+  }
+}
