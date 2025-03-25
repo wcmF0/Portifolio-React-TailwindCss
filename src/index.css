@@ -98,3 +98,10 @@
   color: rgb(94, 234, 212);
   transform: scale(1.3);
 }
+
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden; /* Oculta o scroll horizontal apenas em telas pequenas */
+  }
+}
