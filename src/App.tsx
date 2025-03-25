@@ -67,13 +67,11 @@ function App() {
   };
 
   useEffect(() => {
-    if (window.innerWidth > 768) {
-      AOS.init({
-        duration: 800,
-        easing: "ease-out-cubic",
-        once: false,
-      });
-    }
+    AOS.init({
+      duration: 800, // Duração da animação em milissegundos
+      easing: "ease-out-cubic", // Efeito suave
+      once: false, // Permite que a animação ocorra tanto ao descer quanto ao subir
+    });
     setIsLoaded(true);
 
     const handleMouseMove = (e: MouseEvent) => {

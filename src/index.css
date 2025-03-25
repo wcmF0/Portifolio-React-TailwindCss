@@ -98,14 +98,3 @@
   color: rgb(94, 234, 212);
   transform: scale(1.3);
 }
-
-@media (min-width: 768px) {
-  [data-aos] {
-    opacity: 0; /* Inicialmente invisível */
-    transition: opacity 0.8s ease-out;
-  }
-
-  [data-aos].aos-animate {
-    opacity: 1; /* Visível após a animação */
-  }
-}
