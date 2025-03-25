@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a2942;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3952;
+}
+
+.mouse-glow {
+  position: fixed;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(3, 26, 226, 0.05) 20%,
+    rgba(255, 255, 255, 0.01) 70%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  box-shadow: none;
+  z-index: 9999;
+}
+
+.copied-message {
+  position: fixed;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  animation: fadeInOut 2s ease-in-out;
+  z-index: 1000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hover-active {
+  opacity: 1 !important;
+  transform: scale(1.05);
+  border-color: #64ffda !important;
+}
+
+.hover-active .highlight {
+  transform: scale(1.1);
+  color: #64ffda !important;
+}
+
+.group-hover .hover-active ~ .relative {
+  opacity: 0.2;
+}
+
+.footer {
+  color: #8e9db2;
+  background-color: transparent;
+  padding: 1rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #e2e8f0;
+  font-size: bold;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer a:hover {
+  color: rgb(94, 234, 212);
+  transform: scale(1.3);
+}
+
+@media (min-width: 768px) {
+  [data-aos] {
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.8s ease-out;
+  }
+
+  [data-aos].aos-animate {
+    opacity: 1; /* Visível após a animação */
+  }
+}
