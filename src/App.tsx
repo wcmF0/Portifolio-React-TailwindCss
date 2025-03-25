@@ -273,7 +273,7 @@ function App() {
                 <Mail size={24} />
               </a>
               <a
-                href="/src/assets/Currículo Wagner Costa Magalhães Filho.pdf"
+                href="/Currículo Wagner Costa Magalhães Filho.pdf"
                 download
                 className="hover:text-white transition-colors hover:scale-150"
               >
