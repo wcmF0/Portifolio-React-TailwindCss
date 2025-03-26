@@ -33,27 +33,49 @@ function App() {
   const [showCopied, setShowCopied] = useState(false);
 
   const allTechnologies = [
-    { name: "HTML5", icon: FaHtml5, category: ["Front-End"] },
-    { name: "CSS3", icon: FaCss3Alt, category: ["Front-End"] },
-    { name: "JavaScript", icon: FaJs, category: ["Front-End", "Back-End"] },
+    { name: "HTML5", cor: "#f06529", icon: FaHtml5, category: ["Front-End"] },
+    { name: "CSS3", cor: "#2965f1", icon: FaCss3Alt, category: ["Front-End"] },
+    {
+      name: "JavaScript",
+      cor: "#EFDA4E",
+      icon: FaJs,
+      category: ["Front-End", "Back-End"],
+    },
     {
       name: "TypeScript",
+      cor: "#007acc",
       icon: SiTypescript,
       category: ["Front-End", "Back-End"],
     },
-    { name: "React", icon: FaReact, category: ["Front-End"] },
-    { name: "TailwindCss", icon: RiTailwindCssFill, category: ["Front-End"] },
+    { name: "React", cor: "#00D7FE", icon: FaReact, category: ["Front-End"] },
+    {
+      name: "TailwindCss",
+      cor: "#00BCFF",
+      icon: RiTailwindCssFill,
+      category: ["Front-End"],
+    },
     { name: "Vite", icon: SiVite, category: ["Front-End"] },
-    { name: "Node.js", icon: FaNodeJs, category: ["Back-End"] },
+    { name: "Node.js", cor: "#7FBC40", icon: FaNodeJs, category: ["Back-End"] },
     { name: "Git", icon: FaGit, category: ["Ferramentas"] },
-    { name: "GitHub", icon: FaGithub, category: ["Ferramentas"] },
+    {
+      name: "GitHub",
+      cor: "#F0F6FC",
+      icon: FaGithub,
+      category: ["Ferramentas"],
+    },
     {
       name: "Visual Studio Code",
+      cor: "#0087D1",
       icon: BiLogoVisualStudio,
       category: ["Ferramentas"],
     },
     { name: "Figma", icon: FaFigma, category: ["Ferramentas"] },
-    { name: "Vercel", icon: IoLogoVercel, category: ["Ferramentas"] },
+    {
+      name: "Vercel",
+      cor: "#FFFFFF",
+      icon: IoLogoVercel,
+      category: ["Ferramentas"],
+    },
   ];
   const [technologies, setTechnologies] = useState(allTechnologies);
 
@@ -336,7 +358,7 @@ function App() {
 
             {/* Tecnologias com animação */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {technologies.map(({ name, icon: Icon }, index) => (
+              {technologies.map(({ name, icon: Icon, cor }, index) => (
                 <div
                   key={`${name}-${filter}-${index}`}
                   className="bg-gray-800/50 p-4 rounded-lg backdrop-blur-sm hover:bg-gray-800/70 transition-all flex justify-center items-center space-x-2 opacity-0 transform translate-y-4"
@@ -345,7 +367,7 @@ function App() {
                     animationDelay: `${index * 0.2}s`,
                   }}
                 >
-                  <Icon size={40} color="#e2e8f0" />
+                  <Icon size={40} color={cor} />
                   <span className="text-[#e2e8f0] font-semibold">{name}</span>
                 </div>
               ))}
