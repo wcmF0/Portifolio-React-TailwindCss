@@ -205,7 +205,7 @@ function App() {
       <div className="flex flex-col lg:flex-row lg:p-12 lg:mr-10 lg:ml-10">
         {/* Left Fixed Container */}
         <div
-          className="lg:fixed lg:w-1/2 h-screen p-8 flex flex-col justify-between"
+          className="lg:fixed lg:w-1/2 p-8 flex flex-col justify-between"
           data-aos="fade-right"
         >
           <div>
@@ -441,10 +441,7 @@ function App() {
               ))}
             </div>
           </section>
-          <footer
-            className="footer p-2 text-center mt-5 text-[#8E9DB2]"
-            data-aos="fade-in"
-          >
+          <footer className="footer p-2 text-center mt-5 text-[#8E9DB2]">
             Portfólio inspirado pela{" "}
             <a
               target="_blank"
