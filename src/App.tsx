@@ -148,8 +148,14 @@ function App() {
       description:
         "Um aplicativo web simples projetado para resolver um problema específico em jogos personalizados de ARAM (Modo de Jogo de League of Legends). No ARAM padrão, os jogadores geralmente têm 2 rerolls, criando uma seleção de 15 campeões. No entanto, essa funcionalidade não está disponível em jogos personalizados. Este aplicativo resolve o problema se comunicando com a API do Jogo, gerando aleatoriamente até 50 campeões únicos para cada equipe. Além disso, ele inclui um recurso prático para visualizar buffs e nerfs dos campeões com base no patch atual do jogo.",
       image: ProjetoAram,
-      technologies: ["JavaScript", "HTML", "CSS"],
-      link: "https://aram-randomizer-roan.vercel.app/?lang=en-US",
+      technologies: [
+        "React",
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "Tailwind CSS",
+      ],
+      link: "https://aram-randomizer-v2.vercel.app",
     },
     {
       title: "Web Page - CardBank",
