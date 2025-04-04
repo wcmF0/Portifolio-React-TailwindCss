@@ -219,7 +219,7 @@ function App() {
               Wagner Filho
             </h1>
             <h2 className="text-2xl text-gray-400 text-[#e2e8f0]">
-              Desenvolvedor Front End
+              Desenvolvedor FullStack
             </h2>
             <p className="text-lg max-w-xl mt-4 text-[#8E9DB2]">
               Desenvolvo interfaces web funcionais e acessíveis, garantindo
@@ -323,8 +323,8 @@ function App() {
             >
               <p>
                 Olá, meu nome é Wagner Filho. Atualmente curso Análise e
-                Desenvolvimento de Sistemas e nos últimos meses, tenho me
-                dedicado ao aprendizado e aprimoramento em tecnologias.
+                Desenvolvimento de Sistemas e tenho me dedicado ao aprendizado e
+                aprimoramento em tecnologias.
               </p>
               <p>
                 Estou em busca da minha primeira oportunidade na área de
