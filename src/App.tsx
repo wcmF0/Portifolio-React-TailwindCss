@@ -4,6 +4,7 @@ import CardBank from "./assets/CardBank.png";
 import CodeConnect from "./assets/CodeConnect.png";
 import SpotifyClone from "./assets/SpotifyClone.png";
 import Fokus from "./assets/Fokus.png";
+import SgLocaliza from "./assets/SgLocaliza.png";
 import { Github, Linkedin, Mail, FileText, ExternalLink } from "lucide-react";
 import {
   FaHtml5,
@@ -143,6 +144,14 @@ function App() {
   };
 
   const projects = [
+    {
+      title: "SgLocaliza",
+      description:
+        "O SG Localiza é um jogo web interativo onde o jogador deve adivinhar bairros da cidade de São Gonçalo com base em imagens reais. Desenvolvido com React no frontend e Node.js com Express no backend, o projeto foi criado com o objetivo de praticar conceitos de lógica de programação, rotas dinâmicas, consumo de APIs e armazenamento de estado em memória.",
+      image: SgLocaliza,
+      technologies: ["React", "JavaScript", "Node.js", "HTML", "CSS"],
+      link: "https://p-sg-localiza-3pmg.vercel.app",
+    },
     {
       title: "AramRandomizer",
       description:
